@@ -1,0 +1,68 @@
+.light {
+    --primary-color: #151515;
+    --surface-color: #fffbfa;
+    --accent-color: #151515;
+    --accent-hover-color: #3b3b3b;
+    --color: #3b3b3b;
+}
+  
+.dark {
+    --primary-color: #151515;
+    --surface-color: #3b3b3b;
+    --accent-color: #151515;
+    --accent-hover-color: #fffbfa;
+    --color: #fffbfa;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--color);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+canvas {
+    background-color: var(--surface-color);
+    display: block;
+    border: 1px solid #ddd;
+    margin: 32px;
+    cursor: crosshair;
+}
+
+.card-container {
+    position: absolute;
+    margin: 42px;
+    top: 0;
+    left: 0;
+}
+
+.button-container {
+    position: absolute;
+    margin: 42px;
+    bottom: 0;
+    right: 0;
+}
+
+.mdl-button--colored {
+    background-color: var(--accent-color) !important; 
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: var(--accent-hover-color) !important; 
+    }
+
+    span {
+        color: var(--surface-color);
+    }
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24
+}
